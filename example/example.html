@@ -1,0 +1,34 @@
+<head>
+  <title>example</title>
+</head>
+
+<body>
+  <h1>Welcome to Insightly Example.</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  Be sure to start with '--settings settings.json' and add your api key to the settings.json file.
+  <br>
+  <br> Resource:
+  <select id='insightlyResouceName'>
+    <option selected>Users</option>
+    <option>Organisations</option>
+    <option>Notes</option>
+    <option>Contacts</option>
+    <option>TaskCategories</option>
+    <option>Tasks</option>
+  </select>
+  <br>
+  <button>Click Me</button>
+  <br>
+  <p>Press the button times to get the listed resource.</p>
+
+  {{#if results}}
+    Check your console for results <br>
+  {{/if}}
+  {{#if error}}
+    Error : {{error}}<br>
+  {{/if}}
+</template>
