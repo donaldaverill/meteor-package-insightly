@@ -12,3 +12,11 @@ Please refer to the [example](https://github.com/fourquet/meteor-package-insight
 
 #### Important notes
 This package is not set up to retrieve every type of resource Insightly offers (ex: File Attachments). If you need to connect to Insightly, the recommended way is to fork and update this repository and use the package locally. Consult the official [Insightly API](https://api.insight.ly/v2/Help) to add  access to resources which are not available with how this package is set up.
+
+### Version
+0.0.1
+
+License
+----
+
+MIT
